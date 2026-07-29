@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Overlay Mekirs</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+    background: transparent;
+    position: relative;
+    font-family: Arial, sans-serif;
+  }
+
+  iframe {
+    border: none;
+    position: absolute;
+  }
+
+  /* Chat */
+  #chat {
+    bottom: 10px;
+    left: 10px;
+    width: 280px;
+    height: 200px;
+  }
+
+  /* ALERTS (como estaban antes) */
+  #alerts-container {
+    position: absolute;
+    left: -120px;
+    bottom: 120px;
+    width: 750px;
+    height: 500px;
+    transform: scale(0.78);
+    transform-origin: bottom left;
+  }
+
+  #alerts-container iframe {
+    width: 750px;
+    height: 500px;
+  }
+
+  /* Meta */
+  #goal {
+    top: 10px;
+    left: 42%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 90px;
+  }
+
+  /* Tops más a la izquierda */
+  #tops {
+    position: absolute;
+    top: 0;
+    right: 360px; /* MÁS a la izquierda */
+    width: 420px;
+  }
+
+  .top-box {
+    position: relative;
+    width: 700px;
+    height: 100px;
+    transform: scale(0.6);
+    transform-origin: top right;
+  }
+
+  .top-box iframe {
+    width: 700px;
+    height: 100px;
+  }
+
+  /* POSICIONES */
+  #top-kick {
+    margin-top: 20px;
+  }
+
+  #top-subs {
+    margin-top: -60px; /* un poco más abajo que antes */
+  }
+
+  #top-propina {
+    margin-top: -60px; /* pegado debajo del de subs */
+  }
+
+</style>
+</head>
+<body>
+
+<!-- Chat -->
+<iframe id="chat" src="https://botrix.live/widgets/chat/?bid=hL4jXwuISOTVQTdQVTPC9A&theme=cake&messageSound=0&messageDirection=up&platformIcon=false&bots=false&emojis=true&hideCommands=false&hideMessages=true&hideMessagesSeconds=15&widgetSize=21&streamTogether=true&cheer=true&pointsReward=false&animation=popIn&showTimestamp=false&shadowThickness=1&twitch=false&youtube=false&kick=true&trovo=false"></iframe>
+
+<!-- Alerts -->
+<div id="alerts-container">
+  <iframe src="https://botrix.live/alerts?bid=hL4jXwuISOTVQTdQVTPC9A"></iframe>
+</div>
+
+<!-- Meta -->
+<iframe id="goal" src="https://botrix.live/widgets/goals/kicks/?bid=hL4jXwuISOTVQTdQVTPC9A&platform=kick&goalId=kicks-kick&mode=windowed&theme=cleanradius&targetValue=100&rank=1&fontFamily=Arial&fontSize=32&fillColor=%232E7D32&textColor=%23ffffff&message=KICKs%20goal%20DEL%20MES&initialValue=0&align=center&windowResetMode=calendar&calendarPreset=month&resetHourOffset=0"></iframe>
+
+<!-- Tops -->
+<div id="tops">
+
+  <div class="top-box" id="top-kick">
+    <iframe src="https://botrix.live/widgets/labels?bid=hL4jXwuISOTVQTdQVTPC9A&text=%F0%9F%92%9ATOP+KICKS%3A+%7Bname%7D+-+%7Bamount%7D&font=Arial&type=topTodayKicks&platform=kick&style=&align=left&fontSize=40&fontWeight=700&fontStyle=normal&textDecoration=none&letterSpacing=0&lineHeight=1.2&color=%23a6ff00&animation=none&direction=normal&motion=none&motionDuration=8&motionDirection=left&motionDelay=0&emphasis=none&emphasisDuration=2.5&emphasisIntensity=50&fx=none&fxDuration=3&fxIntensity=50&animationEasing=linear&animationIterationCount=infinite&shadow=0px+0px+10px+%23000000&shadowX=0&shadowY=0&shadowBlur=10&shadowColor=%23000000"></iframe>
+  </div>
+
+  <div class="top-box" id="top-subs">
+    <iframe src="https://botrix.live/widgets/labels?bid=hL4jXwuISOTVQTdQVTPC9A&text=%F0%9F%8E%81TOP+DE+SUBS%3A+%7Bname%7D+-+%7Bamount%7D&font=Arial&type=topTodaySubGifter&platform=kick&style=&align=left&fontSize=40&fontWeight=700&fontStyle=normal&textDecoration=none&letterSpacing=0&lineHeight=1.2&color=%23ff1a1a&animation=none&direction=normal&motion=none&motionDuration=8&motionDirection=left&motionDelay=0&emphasis=none&emphasisDuration=2.5&emphasisIntensity=50&fx=none&fxDuration=3&fxIntensity=50&animationEasing=linear&animationIterationCount=infinite&shadow=0px+0px+10px+%23000000&shadowX=0&shadowY=0&shadowBlur=10&shadowColor=%23000000"></iframe>
+  </div>
+
+  <div class="top-box" id="top-propina">
+    <iframe src="https://botrix.live/widgets/labels?bid=hL4jXwuISOTVQTdQVTPC9A&text=%E2%AD%90TOP+PROPINA%3A+%7Bname%7D+-+%7Bamount%7D+%7Bcurrency%7D&font=Arial&type=topPaypal&platform=kick&style=&align=left&fontSize=40&fontWeight=700&fontStyle=normal&textDecoration=none&letterSpacing=0&lineHeight=1.2&color=%23ff0066&animation=none&direction=normal&motion=none&motionDuration=8&motionDirection=left&motionDelay=0&emphasis=none&emphasisDuration=2.5&emphasisIntensity=50&fx=none&fxDuration=3&fxIntensity=50&animationEasing=linear&animationIterationCount=infinite&shadow=0px+0px+10px+%23000000&shadowX=0&shadowY=0&shadowBlur=10&shadowColor=%23000000"></iframe>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -28,7 +28,7 @@
     height: 200px;
   }
 
-  /* ALERTS (como estaban antes) */
+  /* ALERTS */
   #alerts-container {
     position: absolute;
     left: -120px;
@@ -44,7 +44,7 @@
     height: 500px;
   }
 
-  /* Meta */
+  /* NUEVA META (subs) */
   #goal {
     top: 10px;
     left: 42%;
@@ -53,11 +53,11 @@
     height: 90px;
   }
 
-  /* Tops más a la izquierda */
+  /* Tops */
   #tops {
     position: absolute;
     top: 0;
-    right: 360px; /* MÁS a la izquierda */
+    right: 360px;
     width: 420px;
   }
 
@@ -80,11 +80,15 @@
   }
 
   #top-subs {
-    margin-top: -60px; /* un poco más abajo que antes */
+    margin-top: -60px;
   }
 
   #top-propina {
-    margin-top: -60px; /* pegado debajo del de subs */
+    margin-top: -60px;
+  }
+
+  #ultimo-sub {
+    margin-top: -60px;
   }
 
 </style>
@@ -99,22 +103,27 @@
   <iframe src="https://botrix.live/alerts?bid=hL4jXwuISOTVQTdQVTPC9A"></iframe>
 </div>
 
-<!-- Meta -->
-<iframe id="goal" src="https://botrix.live/widgets/goals/kicks/?bid=hL4jXwuISOTVQTdQVTPC9A&platform=kick&goalId=kicks-kick&mode=windowed&theme=cleanradius&targetValue=100&rank=1&fontFamily=Arial&fontSize=32&fillColor=%232E7D32&textColor=%23ffffff&message=KICKs%20goal%20DEL%20MES&initialValue=0&align=center&windowResetMode=calendar&calendarPreset=month&resetHourOffset=0"></iframe>
+<!-- META SUBS -->
+<iframe id="goal" src="https://botrix.live/widgets/goals/kicksubs/?bid=hL4jXwuISOTVQTdQVTPC9A&platform=kick&goalId=kicksubs-kick&mode=windowed&theme=cleanradius&targetValue=10&rank=1&fontFamily=Arial&fontSize=32&fillColor=%2355cc00&textColor=%23ffffff&message=SUSCRIPTORES%20DEL%20MES&initialValue=1&align=center&windowResetMode=calendar&calendarPreset=month&resetHourOffset=0"></iframe>
 
 <!-- Tops -->
 <div id="tops">
 
   <div class="top-box" id="top-kick">
-    <iframe src="https://botrix.live/widgets/labels?bid=hL4jXwuISOTVQTdQVTPC9A&text=%F0%9F%92%9ATOP+KICKS%3A+%7Bname%7D+-+%7Bamount%7D&font=Arial&type=topTodayKicks&platform=kick&style=&align=left&fontSize=40&fontWeight=700&fontStyle=normal&textDecoration=none&letterSpacing=0&lineHeight=1.2&color=%23a6ff00&animation=none&direction=normal&motion=none&motionDuration=8&motionDirection=left&motionDelay=0&emphasis=none&emphasisDuration=2.5&emphasisIntensity=50&fx=none&fxDuration=3&fxIntensity=50&animationEasing=linear&animationIterationCount=infinite&shadow=0px+0px+10px+%23000000&shadowX=0&shadowY=0&shadowBlur=10&shadowColor=%23000000"></iframe>
+    <iframe src="https://botrix.live/widgets/labels?bid=hL4jXwuISOTVQTdQVTPC9A&text=%F0%9F%92%9ATOP+KICKS%3A+%7Bname%7D+-+%7Bamount%7D&font=Arial&type=topTodayKicks&platform=kick&align=left&fontSize=40&fontWeight=700&color=%23a6ff00&shadow=0px+0px+10px+%23000000"></iframe>
   </div>
 
   <div class="top-box" id="top-subs">
-    <iframe src="https://botrix.live/widgets/labels?bid=hL4jXwuISOTVQTdQVTPC9A&text=%F0%9F%8E%81TOP+DE+SUBS%3A+%7Bname%7D+-+%7Bamount%7D&font=Arial&type=topTodaySubGifter&platform=kick&style=&align=left&fontSize=40&fontWeight=700&fontStyle=normal&textDecoration=none&letterSpacing=0&lineHeight=1.2&color=%23ff1a1a&animation=none&direction=normal&motion=none&motionDuration=8&motionDirection=left&motionDelay=0&emphasis=none&emphasisDuration=2.5&emphasisIntensity=50&fx=none&fxDuration=3&fxIntensity=50&animationEasing=linear&animationIterationCount=infinite&shadow=0px+0px+10px+%23000000&shadowX=0&shadowY=0&shadowBlur=10&shadowColor=%23000000"></iframe>
+    <iframe src="https://botrix.live/widgets/labels?bid=hL4jXwuISOTVQTdQVTPC9A&text=%F0%9F%8E%81TOP+DE+SUBS%3A+%7Bname%7D+-+%7Bamount%7D&font=Arial&type=topTodaySubGifter&platform=kick&align=left&fontSize=40&fontWeight=700&color=%23ff1a1a&shadow=0px+0px+10px+%23000000"></iframe>
   </div>
 
   <div class="top-box" id="top-propina">
-    <iframe src="https://botrix.live/widgets/labels?bid=hL4jXwuISOTVQTdQVTPC9A&text=%E2%AD%90TOP+PROPINA%3A+%7Bname%7D+-+%7Bamount%7D+%7Bcurrency%7D&font=Arial&type=topPaypal&platform=kick&style=&align=left&fontSize=40&fontWeight=700&fontStyle=normal&textDecoration=none&letterSpacing=0&lineHeight=1.2&color=%23ff0066&animation=none&direction=normal&motion=none&motionDuration=8&motionDirection=left&motionDelay=0&emphasis=none&emphasisDuration=2.5&emphasisIntensity=50&fx=none&fxDuration=3&fxIntensity=50&animationEasing=linear&animationIterationCount=infinite&shadow=0px+0px+10px+%23000000&shadowX=0&shadowY=0&shadowBlur=10&shadowColor=%23000000"></iframe>
+    <iframe src="https://botrix.live/widgets/labels?bid=hL4jXwuISOTVQTdQVTPC9A&text=%E2%AD%90TOP+PROPINA%3A+%7Bname%7D+-+%7Bamount%7D+%7Bcurrency%7D&font=Arial&type=topPaypal&platform=kick&align=left&fontSize=40&fontWeight=700&color=%23ff0066&shadow=0px+0px+10px+%23000000"></iframe>
+  </div>
+
+  <!-- NUEVO: último suscriptor -->
+  <div class="top-box" id="ultimo-sub">
+    <iframe src="https://botrix.live/widgets/labels?bid=hL4jXwuISOTVQTdQVTPC9A&text=%F0%9F%91%91Suscriptor%3A+%7Bvalue%7D&font=Arial&type=ultimoSub&platform=kick&align=left&fontSize=32&fontWeight=700&gradient=linear-gradient(%23fbff00%2C+%23ff7b00)&shadow=0px+0px+10px+%23000000"></iframe>
   </div>
 
 </div>

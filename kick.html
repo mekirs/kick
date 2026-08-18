@@ -20,6 +20,16 @@
     position: absolute;
   }
 
+  /* CHAT (recorte superior leve controlado) */
+  #chat {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 240px;
+    height: 360px;
+    transform: translateY(-10px); /* sube un poco para mostrar más arriba */
+  }
+
   /* ALERTS */
   #alerts-container {
     position: absolute;
@@ -38,18 +48,19 @@
 
   /* META */
   #goal {
-    top: 10px;
+    top: 8px;
     left: 42%;
     transform: translateX(-50%);
     width: 500px;
     height: 90px;
   }
 
-  /* Tops */
+  /* TOPS (más a la izquierda) */
   #tops {
     position: absolute;
-    top: 0;
-    right: 360px;
+    top: 70px;
+    left: 27%; /* más a la izquierda que antes */
+    transform: translateX(-50%);
     width: 420px;
   }
 
@@ -57,8 +68,8 @@
     position: relative;
     width: 700px;
     height: 100px;
-    transform: scale(0.6);
-    transform-origin: top right;
+    transform: scale(0.52);
+    transform-origin: top center;
   }
 
   .top-box iframe {
@@ -66,24 +77,28 @@
     height: 100px;
   }
 
-  #top-kick { margin-top: 20px; }
-  #top-subs { margin-top: -60px; }
-  #top-propina { margin-top: -60px; }
-  #ultimo-sub { margin-top: -60px; }
+  #top-kick { margin-top: 0px; }
+  #top-subs { margin-top: -70px; }
+  #top-propina { margin-top: -70px; }
+  #ultimo-sub { margin-top: -70px; }
+
 
 </style>
 </head>
 <body>
 
-<!-- Alerts -->
+<!-- CHAT -->
+<iframe id="chat" src="https://botrix.live/widgets/chat/?bid=hL4jXwuISOTVQTdQVTPC9A&theme=cake&messageSound=0&messageDirection=up&platformIcon=false&bots=false&emojis=true&hideCommands=false&hideMessages=true&hideMessagesSeconds=15&widgetSize=21&streamTogether=true&cheer=true&pointsReward=false&animation=popIn&showTimestamp=false&shadowThickness=1&twitch=false&youtube=false&kick=true&trovo=false"></iframe>
+
+<!-- ALERTS -->
 <div id="alerts-container">
   <iframe src="https://botrix.live/alerts?bid=hL4jXwuISOTVQTdQVTPC9A"></iframe>
 </div>
 
-<!-- Meta -->
+<!-- META -->
 <iframe id="goal" src="https://botrix.live/widgets/goals/kicksubs/?bid=hL4jXwuISOTVQTdQVTPC9A&platform=kick&goalId=kicksubs-kick&mode=windowed&theme=cleanradius&targetValue=10&rank=1&fontFamily=Arial&fontSize=32&fillColor=%2355cc00&textColor=%23ffffff&message=SUSCRIPTORES%20DEL%20MES&initialValue=1&align=center&windowResetMode=calendar&calendarPreset=month&resetHourOffset=0"></iframe>
 
-<!-- Tops -->
+<!-- TOPS -->
 <div id="tops">
 
   <div class="top-box" id="top-kick">
